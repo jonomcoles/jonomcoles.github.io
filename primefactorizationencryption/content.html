@@ -1,0 +1,102 @@
+<html>
+	<font face="times" size="2"><i>
+	This is a two-keyed encryption method that utilizes prime factorization to 
+	heavily encode text strings. Here is how it works:</br></br>
+	Given:</br></br> 
+	</font></i>
+	<font face="courier" size="2">
+	0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</br>
+	2132&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;764599</br>
+	564231&nbsp;&nbsp;&nbsp;4878745901</br></br>
+	<font face="times" size="2"><i>
+	This method treats the entries in the first row as the key designations. The
+	left entry represents the key shift designation. This dictates that the relationship
+	between the "n"th letter of the alphabet corresponds to the "n+0"th prime number. 
+	Similarly, the right entry is the key multiplier designation, and dictates
+	that the "n"th letter of the alphabet corresponds to the "n*1"th prime number. In 
+	the encryption software, the key multiplier designation acts first. Using the given 
+	key designations, we have the following key:</br></br>
+	</font>
+	<font face="courier" size="2">
+	a = 2</br>
+	b = 3</br>
+	c = 5</br>
+	...</br>
+	x = 89</br>
+	y = 97</br>
+	z = 101</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	Lets say the first row of the given code was instead as follows:</br></br>
+	</font>
+	<font face="courier" size="2">
+	5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	Then we would have the following key:</br></br>
+	</font>
+	<font face="courier" size="2">
+	a = 19</br>
+	b = 31</br>
+	c = 43</br>
+	...</br>
+	x = 389</br>
+	y = 409</br>
+	z = 431</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	Going back to the original example, the remaining two rows are solvable now that
+	the key has been calculated. The left entries of the remaining rows are the
+	order designations, while the right rows are the value designations. These numbers 
+	dictate the value order of prime factors. The lengths of these designations are 
+	measured to find the amount of prime factors for the value designation. For example 
+	the first order designation is:</br></br>
+	</font>
+	<font face="courier" size="2">
+	2132</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	This method interprets this as meaning that there are four factors of the value designation,
+	and that the second largest comes first, the smallest comes second, the largest comes
+	third, and the second largest comes last again. Using this information, one can analyze
+	the value designation, which is the following:</br></br>
+	</font>
+	<font face="courier" size="2">
+	764599</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	This method follows a simple if loop that runs once for each factor that must be found.
+	Using the key, the largest possible prime number is divided from the value designation.
+	If the result is not an integer, then the next largest prime number is tested. This 
+	process is repeated until an integer value is produced. This integer is then negated
+	from further calculation unless its corresponding value in the order designation is repeated.
+	Repeating this step four times, once for each factor in our first row, one finds the following
+	factors:</br></br>
+	</font>
+	<font face="courier" size="2">
+	11        11        71        89</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	Arranging these factors according to the order designation yields the following:</br></br>
+	</font>
+	<font face="courier" size="2">
+	71        11        89        71</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	Plugging in the corresponding letter values yields the following:</br></br>
+	</font>
+	<font face="courier" size="2">
+	"text"</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	Repeating these steps for the third row yields the following:</br></br>
+	</font>
+	<font face="courier" size="2">
+	"string"</br></br>
+	</font>
+	<font face="times" size="2"><i>
+	This method combines two somewhat uncommon cryptography methods to create an interesting
+	encryption code. Using very large key designations could result in messages that would
+	be very difficult to decrypt without software.</br></br>
+	</font>
+</html>
