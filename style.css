@@ -1,0 +1,29 @@
+@font-face{
+	src: url(assets/eurostile.otf);
+	font-family: Eurostile;
+}
+
+@font-face{
+	src: url(assets/pragmatica.ttf);
+	font-family: Pragmatica;
+}
+
+.title {
+	font-size: 40px;
+	line-height: 60px;
+	font-family: Eurostile;
+	text-align: center;
+	color: white;
+}
+
+.description {
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Pragmatica;
+	color: black;
+	display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+    padding:5px;
+    background-color:white;
+    color:black;
+}

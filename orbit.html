@@ -1,0 +1,72 @@
+<html>
+<!-- Favicon Reference -->
+<link rel="icon" href="assets/favicon.png">
+
+<!-- Tab Title -->
+<title>Jono Coles</title>
+
+<!-- Font Stylesheet Reference -->
+<link rel="stylesheet" href="style.css">
+    
+<!-- A-Frame Reference -->
+<head>
+	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<body>
+
+<!-- A-Frame Content -->
+<a-scene vr-mode-ui="enabled: false">
+	<a-sky color="white"></a-sky>
+	
+	<!-- Orbiting Spheres -->
+  	<a-entity position="0 1.6 0" rotation="90 0 -75">
+    	<a-entity position="0 -5 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="19000" fill="forwards" to="90 0 285" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 1.6 0" rotation="30 90 -20">
+    	<a-entity position="0 -3.5 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="20000" fill="forwards" to="30 90 340" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 1.6 0" rotation="-60 90 -120">
+    	<a-entity position="0 -10 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="14000" fill="forwards" to="-60 90 240" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="-5 1.6 0" rotation="30 90 -130">
+    	<a-entity position="0 -10 0" geometry="primitive: sphere" material="shader: flat; color: black" scale="2 2 2"></a-entity>
+    	<a-animation attribute="rotation" dur="17000" fill="forwards" to="30 90 230" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 1.6 0" rotation="80 180 60">
+    	<a-entity position="0 -5 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="19000" fill="forwards" to="80 180 -300" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 1.6 0" rotation="30 90 -120">
+    	<a-entity position="0 -8 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="25000" fill="forwards" to="30 90 240" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 0 0" rotation="90 0 80">
+    	<a-entity position="0 -4 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="21000" fill="forwards" to="90 0 440" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 1.6 0" rotation="-50 90 -200">
+    	<a-entity position="0 -9 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="20000" fill="forwards" to="-50 90 160" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+  	<a-entity position="0 1.6 0" rotation="80 180 60">
+    	<a-entity position="0 -5 0" geometry="primitive: sphere" material="shader: flat; color: black"></a-entity>
+    	<a-animation attribute="rotation" dur="30000" fill="forwards" to="80 180 -300" repeat="indefinite" easing="linear"></a-animation>
+  	</a-entity>
+  	
+</a-scene>
+</html>
+
+<!-- All Content © Jonathan Coles 2021. All Rights Reserved. -->
