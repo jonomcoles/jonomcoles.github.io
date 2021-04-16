@@ -23,7 +23,17 @@
 	color: black;
 	display: table; /* keep the background color wrapped tight */
     margin: 0px auto 0px auto; /* keep the table centered */
-    padding:5px;
-    background-color:white;
-    color:black;
+    padding: 5px;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    text-align: left;
+}
+
+.caption {
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Pragmatica;
+	color: black;
 }
