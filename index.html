@@ -10,7 +10,7 @@
 	<!-- Reference Font Stylesheet -->
 	<link rel="stylesheet" href="style.css">
 	
-	<!-- Styles for iframe and Overlay and Hyperlink Conventions -->
+	<!-- Styles for iframe, Info Panel, Hyperlink Conventions, and Block Panel Animation -->
     <style type="text/css">
         
         #infopanel
@@ -20,8 +20,38 @@
             left: 24%;
             width:52%;
             height:60%;
-            z-index: 3;
+            z-index: 2;
+            display: block;
         }
+        
+        #blockpanel
+        {
+        	position: absolute;
+        	z-index: 2;
+        	bottom: 0%;
+        	right: 0%;
+        	width: 10%;
+        	height: 20%;
+        	display: block;
+        	
+        }
+        
+        /* Block Panel Animation */
+		@keyframes translation {
+  			0% {right: 0%}
+  			100% {left: 0%}
+		}
+		
+		.myDiv {
+  			width: 100px;
+  			height: 100px;
+  			background-color: transparent;
+  			animation-delay: 5s;
+  			animation-name: translation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			display: block;
+		}
         
         iframe {
   			width:100%;
@@ -68,6 +98,13 @@
         <div id="infopanel">
         	<iframe src="links.html" name="infopanel">
         </div>
+        
+        <!-- vr-mode-ui Blocking Panel (this currently doesn't display, but it works. 
+        It will display if placed above the info panel, but that will make the info panel disapear.)-->
+        <div class="myDiv" id="blockpanel">
+        	<iframe src="block.html" name="blockpanel">
+        </div>
+
     </div>
     </form>
 </body>
