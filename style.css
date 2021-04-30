@@ -21,11 +21,13 @@
 	line-height: 20px;
 	font-family: Pragmatica;
 	color: black;
-	display: table; /* keep the background color wrapped tight */
-    margin: 0px auto 0px auto; /* keep the table centered */
+	display: table;
+    margin: 0px auto 0px auto;
     padding: 5px;
     background-color: white;
     text-align: left;
+    border: solid;
+    border-width: 1px;
 }
 
 .caption {
