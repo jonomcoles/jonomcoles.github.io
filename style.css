@@ -3,10 +3,20 @@
 	font-family: Eurostile;
 }
 
+@font-face{
+	src: url(assets/baikal/BaikalTrial-ExpandedBlack.otf);
+	font-family: baikalbold;
+}
+
+@font-face{
+	src: url(assets/baikal/BaikalTrial-Regular.otf);
+	font-family: baikalreg;
+}
+
 .title {
-	font-size: 40px;
-	line-height: 60px;
-	font-family: Eurostile;
+	font-size: 100px;
+	line-height: 120px;
+	font-family: baikalbold;
 	text-align: center;
 	color: white;
 }
@@ -14,7 +24,7 @@
 .description {
 	font-size: 12px;
 	line-height: 20px;
-	font-family: Arial;
+	font-family: baikalreg;
 	color: black;
 	display: table;
     margin: 0px auto 0px auto;
@@ -30,6 +40,6 @@
 .caption {
 	font-size: 12px;
 	line-height: 20px;
-	font-family: Arial;
+	font-family: baikalreg;
 	color: black;
 }
