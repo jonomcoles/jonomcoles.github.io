@@ -1,45 +1,152 @@
-@font-face{
-	src: url(assets/eurostile.otf);
-	font-family: Eurostile;
+body {
+	background-color: black;
+	cursor: none;
+	cursor: url('assets/cursor.svg') 25 25, auto;
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden
 }
 
-@font-face{
-	src: url(assets/baikal/BaikalTrial-ExpandedBlack.otf);
-	font-family: baikalbold;
+iframe {
+	margin: 0; 
+	height: 100%; 
+	width: 100%;
+	overflow: auto;
+	frameBorder: 0;	
 }
 
-@font-face{
-	src: url(assets/baikal/BaikalTrial-Regular.otf);
-	font-family: baikalreg;
+p {
+	margin: 0;
+	margin-bottom: 0;
+	padding-top: 0;
 }
 
-.title {
-	font-size: 100px;
-	line-height: 120px;
-	font-family: baikalbold;
-	text-align: center;
-	color: white;
+a:link {
+ 	color: white;
+  	background-color: transparent;
+  	text-decoration: none;
+  	cursor: none;
+  	cursor: url('assets/cursor.svg') 25 25, auto;
+}
+
+a:visited {
+  	color: white;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+ 
+a:hover {
+  	color: white;
+  	/* background-color: #00FF00;*/
+  	text-decoration: line-through;
+  	text-decoration-style: solid;
+  	text-decoration-color: #00FF00;
+  	text-decoration-thickness: 8px
+}
+
+a:active {
+  	color: white;
+  	background-color: transparent;
+  	text-decoration: none;
 }
 
 .description {
-	font-size: 12px;
-	line-height: 20px;
-	font-family: baikalreg;
-	color: black;
-	display: table;
-    margin: 0px auto 0px auto;
-    padding: 20px;
-    background-color: white;
-    text-align: left;
-    border: solid;
-    border-width: 1px;
-    text-align: justify;
-    -moz-text-align-last: justify;
+	color: white;
+	background-color: transparent;
+	font-size: 16pt;
+	overflow: auto;
 }
 
 .caption {
-	font-size: 12px;
-	line-height: 20px;
-	font-family: baikalreg;
-	color: black;
+	color: white;
+	font-size: 8pt;
+	overflow: auto;
+	padding-top: 8px;
+	margin-bottom: 16px;
+}
+
+.header {
+	font-size: 24pt;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 0.035em;
+}
+
+.name {
+	position: absolute;
+	top: 32px;
+	left: 3%;
+}
+
+.projects {
+	top: 0px;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 32px;
+}
+
+.info {
+	position: absolute;
+	top: 32px;
+	right: 3%;
+}
+
+.main {
+	position: absolute;
+	background-color: transparent;
+	top: 85px;
+	left: 3%;
+	right: 3%;
+	bottom: 0%;
+	overflow: hidden;
+}
+
+.left {
+	position: absolute;
+	background-color: transparent;
+	top: 0%;
+	left: 0%;
+	right: 51%;
+	bottom: 0%;
+	overflow: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none; 
+}
+
+.left::-webkit-scrollbar {
+  display: none;
+}
+
+.right {
+	position: absolute;
+	background-color: transparent;
+	top: 0%;
+	left: 51%;
+	right: 0%;
+	bottom: 0%;
+	overflow: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none; 
+}
+
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+	position: absolute;
+	background-color: transparent;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	overflow: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none; 
+  	text-align: justify;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
 }
