@@ -1,0 +1,83 @@
+body {
+	background-color: black;
+	cursor: none;
+	cursor: url('assets/cursor.svg') 10 10, auto;
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden
+}
+
+a:link {
+ 	color: white;
+  	background-color: transparent;
+  	text-decoration: none;
+  	cursor: none;
+  	cursor: url('assets/cursor.svg') 10 10, auto;
+}
+
+a:visited {
+  	color: white;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+
+a:active {
+  	color: white;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+
+.symbol {
+	position: fixed;
+	top: 0px;
+	left: 25px;
+	font-size: 120pt;
+	color: white;
+	text-decoration: none;
+}
+
+.navigation {
+	transform: rotate(-90deg);
+	position: fixed;
+	bottom: 100px;
+	left: 0px;
+	font-size: 40pt;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	font-weight: 500;
+}
+
+.contract {
+	position: absolute;
+	background-color: transparent;
+	top: 10%;
+	left: 20%;
+	right: 20%;
+	bottom: 10%;
+	overflow: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none;
+}
+
+.info {
+	position: absolute;
+  	font-size: 16pt;
+	color: white;
+	background-color: black;
+	top: 50%;
+ 	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	width:500px;
+	overflow: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none;
+  	text-align: justify;
+  	display: none;
+  	padding: 2%;
+}
+
+.navigation:focus + .info {
+	display: block;
+}
