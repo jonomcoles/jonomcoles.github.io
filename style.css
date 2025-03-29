@@ -53,14 +53,14 @@ a:active {
 .description {
 	color: white;
 	background-color: transparent;
-	font-size: 16pt;
+	font-size: 4.5vw;
 	overflow: auto;
 }
 
 ol {
 	color: white;
 	background-color: transparent;
-	font-size: 16pt;
+	font-size: 4.5vw;
 	overflow: auto;
 	list-style-type: none;
 	margin-top: 20px;
@@ -73,14 +73,14 @@ br {
 
 .caption {
 	color: white;
-	font-size: 8pt;
+	font-size: 2.5vw;
 	overflow: auto;
 	padding-top: 8px;
 	margin-bottom: 16px;
 }
 
 .header {
-	font-size: 24pt;
+	font-size: 3.5vw;
 	color: white;
 	text-decoration: none;
 	letter-spacing: 0.035em;
@@ -109,7 +109,7 @@ br {
 .main {
 	position: absolute;
 	background-color: transparent;
-	top: 85px;
+	top: 95px;
 	left: 3%;
 	right: 3%;
 	bottom: 0%;
@@ -165,89 +165,4 @@ br {
   display: none;
 }
 
-@media only screen and (max-width: 300px) {
-  .description {
-	color: white;
-	background-color: transparent;
-	font-size: 32pt;
-	overflow: auto;
-}
-
-ol {
-	color: white;
-	background-color: transparent;
-	font-size: 32pt;
-	overflow: auto;
-	list-style-type: none;
-	margin-top: 40px;
-	padding-right:5%;
-}
-
-br {
-	line-height: 24px;
-}
-
-.caption {
-	color: white;
-	font-size: 16pt;
-	overflow: auto;
-	padding-top: 16px;
-	margin-bottom: 32px;
-}
-
-}
-
-@media only screen and (min-width: 1500px) {
-  .description {
-	color: white;
-	background-color: transparent;
-	font-size: 32pt;
-	overflow: auto;
-}
-
-ol {
-	color: white;
-	background-color: transparent;
-	font-size: 32pt;
-	overflow: auto;
-	list-style-type: none;
-	margin-top: 40px;
-	padding-right:5%;
-}
-
-br {
-	line-height: 24px;
-}
-
-.caption {
-	color: white;
-	font-size: 16pt;
-	overflow: auto;
-	padding-top: 16px;
-	margin-bottom: 32px;
-}
-
-}
-
-
-
-@media only screen and (min-width: 3000px) {
-.header {
-	font-size: 48pt;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 0.07em;
-}
-
-}
-
-@media only screen and (max-width: 600px) {
-.header {
-	font-size: 48pt;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 0.07em;
-}
-
-}
 
