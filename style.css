@@ -166,3 +166,16 @@ br {
 }
 
 
+@media only screen and (min-width: 1600px) {
+	.main {
+		position: absolute;
+		background-color: transparent;
+		top: 150px;
+		left: 3%;
+		right: 3%;
+		bottom: 0%;
+		overflow: hidden;
+	}
+}
+
+
