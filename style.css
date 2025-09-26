@@ -4,7 +4,8 @@ body {
 	cursor: url('assets/cursor.svg') 25 25, auto;
 	margin: 0; 
 	height: 100%; 
-	overflow: hidden
+	overflow: hidden;
+	font-family: "Arial Narrow";
 }
 
 iframe {
