@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width=".7in" height=".7in" version="1.1" viewBox="0 0 50 50">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1" viewBox="0 0 50 50">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        isolation: isolate;
-      }
-
-      .cls-1, .cls-3 {
-        font-family: TimesNewRomanPSMT, 'Times New Roman';
-        font-size: 112.7px;
-      }
-
-      .cls-3 {
-        fill: none;
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 1.5px;
+        fill: lime;
+        stroke-width: 0px;
       }
     </style>
   </defs>
-  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
-  <g>
-    <g id="Layer_1">
-      <g class="cls-2">
-        <text class="cls-1" transform="translate(-3.1 80.4)"><tspan x="0" y="0">*</tspan></text>
-        <text class="cls-3" transform="translate(-3.1 80.4)"><tspan x="0" y="0">*</tspan></text>
-      </g>
-    </g>
-  </g>
+  <circle class="cls-1" cx="25.1" cy="25.1" r="23.4"/>
 </svg>
